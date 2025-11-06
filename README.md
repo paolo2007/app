@@ -11,10 +11,3 @@ cd app
 npm install
 npm run dev
 ```
-
-## Features
-
-| Feature | Fecha creacion | Creado poy |
-|---------|----------------|------------|
-| Login | 16/10/2025 | Jhefferson|
-| Registro | 17/10/2025 | Jhefferson|
