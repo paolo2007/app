@@ -1,0 +1,74 @@
+.texto{
+    margin-top: 20px;
+    background-color: #006e41;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-family: "Itim", cursive;
+    font-size: 17px;
+    border-radius: 16px;
+    width: 220px; /* vw -> view width */
+    height: 55px;
+    border: none;
+}
+.marco4{
+    background-color: #FFFFFF;
+    height: 412px;
+    border-radius: 60px 60px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 50px;
+    align-items: center;
+}
+ h5 {
+  color: #0b6b3a;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.contador {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contador button {
+  background-color: #0b6b3a;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  line-height: 0;
+  cursor: pointer;
+  margin: 0 15px;
+  transition: background-color 0.3s ease;
+}
+
+.contador button:hover {
+  background-color: #0f7c44;
+}
+
+.contador span {
+  font-size: 56px;
+  font-weight: bold;
+  color: #000;
+}
+.siguiente2{
+     display: flex;
+    align-items: center;
+    background-color: #006e41;
+    color: #FFFFFF;
+    text-decoration: none;
+    justify-content: center;
+    font-family: "Itim", cursive;
+    font-size: 24px;
+    border-radius: 16px;
+    width: 200px;
+    height: 45px;
+    border: none;
+}
+

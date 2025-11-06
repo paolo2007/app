@@ -7,9 +7,10 @@ export const Login = () => {
     <>
       <Logorokys/>
       <section className="accion-login">
+        <h1>!BIENVENIDO
+ A ROKYS!</h1>
         <Link to="/Reserva" className="btn btn-login">Reservar</Link>
-        <span>o</span>
-        <Link to="/Admi" className="btn btn-create-account">Administrador</Link>
+
       </section>
     </>
   );

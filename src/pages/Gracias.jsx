@@ -1,25 +1,22 @@
-import { Logorokys} from "../components/Logorokys";
-import { Link } from "react-router";
-import { useState } from "react";
+import { Logorokys } from '../components/Logorokys'
+import { Link } from 'react-router';
 
 import "../styles/Gracias.css";
 
 export const Gracias = () => {
-  const [form, setForm] = useState({
-  });
-
   return (
     <>
-      <Logorokys descripcion/>
-      <section className="marco1">
-  <div className="retro">
-    <Link to="/" className="retroseso">ATRÁS</Link>
-    <h1> MESA RESERVADA</h1>
-  </div>
-   <div className="texto"><p>GRACIAS POR SU RESERVA </p></div>
-      <div className="valor"><p>SU CODIGO ES: 968967</p></div>
-     <Link to="/Login" className="siguiente">Siguiente</Link>
-</section>
+      <Logorokys/>
+      <section className="marco5">
+      <div className="icono-exito">✔</div>
+      <h2>RESERVA EXITOSA</h2>
+      <p>En la bandeja de tu correo te enviamos tu reserva</p>
+
+      <div className="botones-exito">
+        <Link to="/" className="cancelar">CANCELAR</Link>
+        <Link to="/" className="inicio">VOLVER AL INICIO</Link>
+      </div>
+    </section>
     </>
   );
 };

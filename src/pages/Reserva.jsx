@@ -14,16 +14,15 @@ export const Reserva = () => {
       <section className="marco1">
   <div className="retro">
     <Link to="/" className="retroseso">ATRÁS</Link>
-    <h1> RESERVANDO MESA</h1>
   </div>
+  <h2>Rellene los campos para su reserva:</h2>
 
-  <div className="register-container">
     <form className="register-form">
       <input
         type="text"
         name="nombre"
         id="nombre"
-        placeholder="Nombre de usuario"
+        placeholder="Nombre completos"
         required
       />
       <input
@@ -47,9 +46,8 @@ export const Reserva = () => {
         placeholder="Ocasión"
         required
       />
-     <Link to="/Reserva1" className="siguiente">Siguiente</Link>
+      <Link to="/Horarios" className="siguiente">Siguiente</Link>
     </form>
-  </div>
 </section>
 
       

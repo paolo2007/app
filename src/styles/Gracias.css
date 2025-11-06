@@ -1,15 +1,66 @@
-.texto{
-    margin-top: 20px;
-    background-color: #006e41;
-    color: #FFFFFF;
-    text-decoration: none;
-    justify-content: center;
+
+
+.icono-exito {
+  background-color: #006e41;
+  color: #ffcc00;
+  font-size: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.marco5{
+     background-color: #FFFFFF;
+    height: 412px;
+    border-radius: 60px 60px 0px 0px;
     display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 50px;
     align-items: center;
-    font-family: "Itim", cursive;
-    font-size: 17px;
-    border-radius: 16px;
-    width: 220px; /* vw -> view width */
-    height: 55px;
-    border: none;
+}
+
+.exito-container p {
+  font-size: 15px;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.botones-exito {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 220px;
+}
+
+.botones-exito .cancelar,
+.botones-exito .inicio {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.botones-exito button:hover,
+.botones-exito .inicio:hover {
+  transform: scale(1.05);
+}
+
+.inicio {
+  background-color: #006e41;
+  color: #ffffff;
+}
+.cancelar{
+    background-color: #ffcc00;
+  color: #ffffff;
 }
