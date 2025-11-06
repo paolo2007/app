@@ -1,0 +1,15 @@
+.texto{
+    margin-top: 20px;
+    background-color: #006e41;
+    color: #FFFFFF;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: "Itim", cursive;
+    font-size: 17px;
+    border-radius: 16px;
+    width: 220px; /* vw -> view width */
+    height: 55px;
+    border: none;
+}

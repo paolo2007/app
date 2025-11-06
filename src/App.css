@@ -1,67 +1,23 @@
 body {
-    background-color: #4C8479;
+    background-color: #006e41;
     margin: 0px;
 }
-
 
 .logo {
     display: flex;
     justify-content: center;
-    margin-top: 20px
+    margin-top: 40px;
+    height: 200px;
 }
-
-.title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0px;
-}
-
-.title-h1{
-    color: #C8A758;
-    font-family: "Itim", cursive;
-    font-size: 64px;
-    margin: 0px;
-}
-
-.subtitle {
-    font-size: 36px;
-    font-family: "Itim", cursive;
-    color: #FFFFFF;
-}
-
-.inputs-form {
-    display: grid;
-    align-items: center;
-    gap: 14px;
-    margin: 40px;
-}
-
-input{
-    height: 55px;
-    border-radius: 16px;
-    padding-left: 15px;
-    font-family: "Itim", cursive;
-    font-size: 24px;
-}
-
 .accion-login{
     background-color: #FFFFFF;
-    height: 280px;
+    height: 420px;
     border-radius: 60px 60px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: start;
+    margin-top: 100px;
     align-items: center;
-}
-
-.accion-login> span {
-    font-family: "Itim", cursive;
-    color:#636363;
-    font-size: 24px;
-    margin: 10px 0px;
-
 }
 
 .btn {
@@ -74,15 +30,20 @@ input{
 }
 
 .btn-login {
-    background-color: #4C8479;
+    margin-top: 150px;
+    background-color: #006e41;
     color: #FFFFFF;
+    text-decoration: none;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
 
 .btn-create-account {
     display: flex;
     align-items: center;
-    background-color: #9CB9B3;
-    color: #000;
+    background-color: #006e41;
+    color: #FFFFFF;
     text-decoration: none;
     justify-content: center;
 }
