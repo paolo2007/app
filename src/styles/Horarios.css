@@ -1,6 +1,6 @@
 .marco2{
     background-color: #FFFFFF;
-    height: 480px;
+    height: 500px;
     border-radius: 60px 60px 0px 0px;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
 h3{
    font-size: 25px;
    color: #006e41;
-   margin-left: 20px;
+   margin-left: 32px;
    margin-right: 20px;
    font-weight: 800;
 
@@ -46,4 +46,10 @@ h3{
 .siguiente{
     margin-top: 10px;
 }
+.horas button.seleccionado {
+  background-color: #ffb347; /* color cuando está seleccionado */
+  color: #fff;
+  transform: scale(1.05); /* efecto leve al seleccionar */
+}
+
 

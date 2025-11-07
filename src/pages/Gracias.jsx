@@ -13,7 +13,7 @@ export const Gracias = () => {
       <p>En la bandeja de tu correo te enviamos tu reserva</p>
 
       <div className="botones-exito">
-        <Link to="/" className="cancelar">CANCELAR</Link>
+        <Link to="/Cancelacion" className="cancelar">CANCELAR</Link>
         <Link to="/" className="inicio">VOLVER AL INICIO</Link>
       </div>
     </section>

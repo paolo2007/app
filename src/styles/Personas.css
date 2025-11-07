@@ -1,37 +1,50 @@
-.texto{
-    margin-top: 20px;
-    background-color: #006e41;
-    color: #FFFFFF;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    font-family: "Itim", cursive;
-    font-size: 17px;
-    border-radius: 16px;
-    width: 220px; /* vw -> view width */
-    height: 55px;
-    border: none;
+.texto {
+  margin-top: 20px;
+  background-color: #006e41;
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Itim", cursive;
+  font-size: 17px;
+  border-radius: 16px;
+  width: 220px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-.marco4{
-    background-color: #FFFFFF;
-    height: 412px;
-    border-radius: 60px 60px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin-top: 50px;
-    align-items: center;
+
+.texto:hover {
+  background-color: #0f7c44;
+  transform: scale(1.03);
 }
- h5 {
+
+.marco4 {
+  background-color: #ffffff;
+  height: 430px;
+  border-radius: 60px 60px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 50px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+h5 {
   color: #0b6b3a;
   font-size: 32px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .contador {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 15px;
 }
 
 .contador button {
@@ -39,36 +52,84 @@
   color: white;
   border: none;
   border-radius: 12px;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   font-size: 24px;
   line-height: 0;
   cursor: pointer;
-  margin: 0 15px;
-  transition: background-color 0.3s ease;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .contador button:hover {
   background-color: #0f7c44;
+  transform: scale(1.05);
+}
+
+.contador button:active {
+  transform: scale(0.95);
+}
+
+/* --- ESTADO DESHABILITADO --- */
+.contador button:disabled {
+  background-color: #c2c2c2;
+  color: #666;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
 }
 
 .contador span {
   font-size: 56px;
   font-weight: bold;
   color: #000;
-}
-.siguiente2{
-     display: flex;
-    align-items: center;
-    background-color: #006e41;
-    color: #FFFFFF;
-    text-decoration: none;
-    justify-content: center;
-    font-family: "Itim", cursive;
-    font-size: 24px;
-    border-radius: 16px;
-    width: 200px;
-    height: 45px;
-    border: none;
+  width: 60px;
+  text-align: center;
 }
 
+/* --- BOTÓN SIGUIENTE --- */
+.siguiente2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #006e41;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Itim", cursive;
+  font-size: 24px;
+  border-radius: 16px;
+  width: 200px;
+  height: 45px;
+  border: none;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.siguiente2:hover {
+  background-color: #0f7c44;
+  transform: scale(1.03);
+}
+
+/* --- MENSAJE DE AVISO --- */
+.aviso {
+  color: #d93025;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 20px;
+  font-size: 14px;
+  animation: aparecer 0.3s ease-in-out;
+}
+
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
