@@ -28,8 +28,6 @@ export const Datos = () => {
           <p><strong>Hora:</strong> {reserva.hora || "No seleccionada"}</p>
           <p><strong>Cantidad de personas:</strong> {reserva.cantidad || "No especificada"}</p>
         </div>
-
-        {/* 🔹 guardamos de nuevo todos los datos antes de ir a Gracias */}
         <Link 
           to="/Gracias" 
           className="siguiente8"

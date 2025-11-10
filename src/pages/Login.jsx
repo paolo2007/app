@@ -10,7 +10,7 @@ export const Login = () => {
     </div>
       <section className="accion-login">
         <h1>!BIENVENIDO
- A ROKYS!</h1>
+        A ROKYS!</h1>
         <Link to="/Reserva" className="btn btn-login">Reservar</Link>
 
       </section>
