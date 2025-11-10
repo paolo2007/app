@@ -116,7 +116,6 @@ h5 {
   width: 200px;
   height: 45px;
   border: none;
-  margin-top: 20px;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 

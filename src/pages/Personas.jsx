@@ -69,13 +69,13 @@ export const Personas = () => {
         {/* ✅ Párrafo de aviso centrado */}
         {mostrarAviso && (
           <p className="aviso-whatsapp">
-            Superaste el número de personas y{" "}
+            Superaste el número de personas{" "}
             <a
               href="https://api.whatsapp.com/send/?phone=%2B51981440500&text&type=phone_number&app_absent=0"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Contáctanos por WhatsApp
+              Contáctate con nosotros para mas personas
             </a>
           </p>
         )}

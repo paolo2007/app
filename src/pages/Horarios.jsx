@@ -9,7 +9,7 @@ export const Horarios = () => {
   const [aviso, setAviso] = useState(""); // mensaje de error
 
   // ✅ lista de horas disponibles
-  const horas = ["2:00 ", "2:45", "8:00", "4:15", "6:30", "7:15"];
+  const horas = ["2:00p.m ", "2:45p.m", "5:00p.m", "4:15p.m", "6:30p.m", "7:15p.m"];
 
   // ✅ obtener la fecha de hoy en formato YYYY-MM-DD para limitar el input
   const today = new Date().toISOString().split("T")[0];
