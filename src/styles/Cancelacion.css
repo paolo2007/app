@@ -1,14 +1,13 @@
 .marco6 {
   background-color: #ffffff;
-  height: 420px;
+  height: 439px;
   border-radius: 60px 60px 0 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   margin-top: 50px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  animation: aparecer 0.5s ease-in-out;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08)
 }
 
 @keyframes aparecer {
@@ -38,7 +37,7 @@
   border: 3px solid #006e41;
 }
 
-h2 {
+h7 {
   color: #006e41;
   font-size: 22px;
   margin-bottom: 10px;
@@ -71,7 +70,6 @@ section p {
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  transition: all 0.2s ease;
 }
 
 .botones-exito .inicio:hover {

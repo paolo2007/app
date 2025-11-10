@@ -1,42 +1,48 @@
 body {
     background-color: #006e41;
     margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    /* 👈 Aplica Poppins solo aquí */
 }
 
 .logo {
     display: flex;
     justify-content: center;
     margin-top: 50px;
-    height: 200px;
+    height: 150px;
+    margin-left: 20px;
 }
-.accion-login{
+
+.accion-login {
     background-color: #FFFFFF;
     height: 380px;
     border-radius: 60px 60px 0px 0px;
     display: flex;
     flex-direction: column;
     justify-content: start;
-    margin-top: 100px;
+    margin-top: 80px;
     align-items: center;
 }
-.accion-login h1{
-    font-size: 40px;
+
+.accion-login h1 {
+    font-size: 30px;
     margin-top: 60px;
     text-align: center;
     color: #006e41;
 }
 
 .btn {
-    font-family: "Itim", cursive;
-    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    /* 👈 por si quieres asegurarlo también */
+    font-size: 20px;
     border-radius: 16px;
-    width: 80vw; /* vw -> view width */
-    height: 55px;
+    width: 80vw;
+    height: 50px;
     border: none;
 }
 
 .btn-login {
-    margin-top: 50px;
+    margin-top: 10px;
     background-color: #006e41;
     color: #FFFFFF;
     text-decoration: none;

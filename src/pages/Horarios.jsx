@@ -1,7 +1,6 @@
 import { Logorokys } from "../components/Logorokys";
 import { Link } from "react-router";
 import { useState } from "react";
-
 import "../styles/Horarios.css";
 
 export const Horarios = () => {
@@ -9,7 +8,11 @@ export const Horarios = () => {
   const [fecha, setFecha] = useState(""); // guarda la fecha elegida
   const [aviso, setAviso] = useState(""); // mensaje de error
 
-  const horas = ["2:00 pm", "2:45 pm", "3:30 pm", "2:15 pm", "6:30 pm", "7:15 pm"];
+  // ✅ lista de horas disponibles
+  const horas = ["2:00 ", "2:45", "8:00", "4:15", "6:30", "7:15"];
+
+  // ✅ obtener la fecha de hoy en formato YYYY-MM-DD para limitar el input
+  const today = new Date().toISOString().split("T")[0];
 
   const handleNext = (e) => {
     e.preventDefault();
@@ -18,16 +21,31 @@ export const Horarios = () => {
       setAviso("Por favor selecciona una fecha y una hora antes de continuar.");
     } else {
       setAviso("");
-      window.location.href = "/Personas"; // redirige si todo está completo
+
+      // 🔹 Guardamos los datos seleccionados en localStorage
+      const reservaGuardada = JSON.parse(localStorage.getItem("reserva")) || {};
+      const datosCompletos = {
+        ...reservaGuardada,
+        fecha: fecha,
+        hora: horas[selected],
+      };
+
+      localStorage.setItem("reserva", JSON.stringify(datosCompletos));
+
+      // 🔹 Redirigimos a la siguiente página
+      window.location.href = "/Personas";
     }
   };
 
   return (
     <>
-      <Logorokys descripcion />
+      <div className='logo1'>
+      <Logorokys/>
+    </div>
+
       <section className="marco2">
         <div className="retro">
-          <Link to="/Reserva" className="retroseso">ATRÁS</Link>
+          <Link to="/Reserva" className="retroseso"><svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-chevron-left"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M15 6l-6 6l6 6" /></svg></Link>
         </div>
 
         <h3>Elige fecha y hora</h3>
@@ -39,12 +57,12 @@ export const Horarios = () => {
             id="dia"
             required
             value={fecha}
+            min={today} // ✅ evita seleccionar fechas pasadas
             onChange={(e) => setFecha(e.target.value)}
           />
 
-          <h3>Horas disponibles</h3>
-          
           <div className="horas">
+            <h3>Horas disponibles</h3>
             {horas.map((hora, index) => (
               <button
                 key={index}

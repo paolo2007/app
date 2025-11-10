@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+.logo2{
+  display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    height: 150px;
+    margin-left: 20px;
+}
 .texto {
   margin-top: 20px;
   background-color: #006e41;
@@ -6,7 +18,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Itim", cursive;
+  font-family: 'Poppins', sans-serif;
   font-size: 17px;
   border-radius: 16px;
   width: 220px;
@@ -23,28 +35,29 @@
 
 .marco4 {
   background-color: #ffffff;
-  height: 430px;
+  height: 450px;
   border-radius: 60px 60px 0px 0px;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin-top: 50px;
+  margin-top: 20px;
   align-items: center;
   padding-top: 20px;
 }
 
 h5 {
   color: #0b6b3a;
-  font-size: 32px;
+  font-size: 22px;
   margin-bottom: 20px;
   text-align: center;
+  font-weight: 700;
 }
 
 .contador {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .contador button {
@@ -60,6 +73,7 @@ h5 {
   margin: 0 20px;
   transition: all 0.3s ease;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
 }
 
 .contador button:hover {
@@ -96,8 +110,8 @@ h5 {
   background-color: #006e41;
   color: #ffffff;
   text-decoration: none;
-  font-family: "Itim", cursive;
-  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   border-radius: 16px;
   width: 200px;
   height: 45px;
@@ -120,8 +134,8 @@ h5 {
   padding: 0 20px;
   font-size: 14px;
   animation: aparecer 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
 }
-
 
 @keyframes aparecer {
   from {
@@ -133,3 +147,4 @@ h5 {
     transform: translateY(0);
   }
 }
+

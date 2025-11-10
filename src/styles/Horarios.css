@@ -1,28 +1,31 @@
-.marco2{
-    background-color: #FFFFFF;
-    height: 500px;
-    border-radius: 60px 60px 0px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    margin-top: 10px;
-    align-items: center;
+body {
+  font-family: 'Poppins', sans-serif;
 }
-h3{
-   font-size: 25px;
-   color: #006e41;
-   margin-left: 32px;
-   margin-right: 20px;
-   font-weight: 800;
 
+.marco2 {
+  background-color: #FFFFFF;
+  height: 480px;
+  border-radius: 60px 60px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 8px;
+  align-items: center;
 }
-.register-form{
-    width: 280px;
-}
-.horas-container {
-  font-family: Arial, sans-serif;
+
+h3 {
+  font-size: 20px;
+  color: #006e41;
   text-align: center;
+}
 
+.register-form {
+  width: 280px;
+}
+
+.horas-container {
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
 }
 
 .horas {
@@ -35,21 +38,23 @@ h3{
   background-color: #0b6b3a;
   color: white;
   border: none;
+  width: 100px;
+  height: 35px;
   border-radius: 10px;
-  padding: 10px 35px;
-  margin: 5px;
+  padding: 0px 35px;
+  margin: 2px;
   cursor: pointer;
   font-size: 14px;
+  font-family: 'Poppins', sans-serif;
   transition: background-color 0.3s ease;
 }
 
-.siguiente{
-    margin-top: 10px;
+.siguiente {
+  margin-top: 10px;
 }
+
 .horas button.seleccionado {
-  background-color: #ffb347; /* color cuando está seleccionado */
+  background-color: #ffb347;
   color: #fff;
-  transform: scale(1.05); /* efecto leve al seleccionar */
+  transform: scale(1.05);
 }
-
-

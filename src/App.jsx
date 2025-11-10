@@ -8,6 +8,7 @@ import { Horarios } from "./pages/Horarios";
 import { Personas } from "./pages/Personas";
 import { Gracias } from "./pages/Gracias";
 import { Cancelacion } from "./pages/Cancelacion";
+import { Datos } from "./pages/Datos";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="Personas" element={<Personas />} />
         <Route path="Gracias" element={<Gracias />} />
         <Route path="Cancelacion" element={<Cancelacion />} />
+        <Route path="Datos" element={<Datos />} />
       </Routes>
     </>
   );
